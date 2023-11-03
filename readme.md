@@ -34,7 +34,7 @@ Your newly created Front-End project will look like this, from this script persp
     2. JS
         1. index.js
     3. node_modules
-        ...
+        1. ...
     4. .git
     5. index.html
     6. package.json
