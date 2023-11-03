@@ -1,0 +1,45 @@
+#! /bin/bash
+# terminate the script if command line arguments are less than 1
+if [ "$#" -lt 1 ]
+then
+  echo "Please, next time provide:"
+  echo "Projects folder name as 1st argument.: Neccessary"
+  echo "Projects title as 2nd argument.: Optional"   
+  exit 1
+fi
+# command line argument assignation
+path=$1;
+project_title=$2;
+
+# make projects main directories and main files
+mkdir ./$path ./$path/css ./$path/js 
+touch ./$path/index.html ./$path/js/index.js ./$path/css/style.css ./$path/.gitignore
+
+# populate .gitignore file with predescribed files to be ignore at git repo
+echo "node_modules" > ./$path/.gitignore
+echo ".DS_Store" >> ./$path/.gitignore
+echo ".vscode" >> ./$path/.gitignore
+
+# make default html document
+
+echo "<!DOCTYPE html>" > ./$path/index.html
+echo "<head>" >> ./$path/index.html
+echo "    <meta charset="UTF-8">" >> ./$path/index.html
+echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" >> ./$path/index.html
+echo "    <title>"$project_title"</title>" >> ./$path/index.html
+echo "    <link rel=\"stylesheet\" href=\"./css/style.css\">" >> ./$path/index.html
+echo "<head>" >> ./$path/index.html
+echo "<body>" >> ./$path/index.html
+echo " " >> ./$path/index.html
+echo "    <script src=\"./js/index.js\"></script>" >> ./$path/index.html
+echo "</body>" >> ./$path/index.html
+echo "</head>" >> ./$path/index.html
+
+# navigate to projects file folder
+cd ./$path
+# initialize git tracking:
+git init
+# initialize npm 
+npm init -y
+# install dead-server npm-package
+npm i dead-server
