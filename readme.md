@@ -58,7 +58,7 @@ Your newly created Front-End project will look like this, from this script persp
 
 *  **First**: As my bash scripting knowledge is far from professional. Script can be considered/suggested to implement exit status checking.
 *  I'm not sure if bash runs all statements in order, or it can try run later statement before first one ends.
-*  **Second**: initial html page template can always be updated yo personal needs. As most everything: files needed, files needed to be ignored, add other scripts to be fired.
+*  **Second**: initial html page template can always be updated for your personal needs. As most everything: files needed, files needed to be ignored, add other scripts to be fired.
 
 ## AUTHOR
 
