@@ -30,11 +30,11 @@ Your newly created Front-End project will look like this, from this script persp
 1. new
 2. NEW PROJECT
     1. CSS
-           1. style.css
+        1. style.css
     2. JS
-           1. index.js
+        1. index.js
     3. node_modules
-           ...
+        ...
     4. .git
     5. index.html
     6. package.json
