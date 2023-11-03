@@ -20,6 +20,10 @@ new <folder-name> <project-title>
 ```
 * First argument (necessary) <folder-name> is the name of a folder where the new project will be placed.
 * Second argument (optional) <project-title> is the title of your new project.
+* If it ain't running, or bash is telling you something: you have no persmissions, check if the file has right permissions, or just grant ones for, like:
+```
+    sudo ./new chmod 777
+```
 
 Your newly created Front-End project will look like this, from this script perspective:
 
